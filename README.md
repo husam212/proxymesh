@@ -15,7 +15,7 @@ proxy.entryNode = 'us.proxymesh.com:1234'
 proxy.exitNode = '123.123.123.123'
 
 // Setup the proxy request. Used exit node is passed in the callback.
-var ops = url.parse('http://example.com');
+var opts = url.parse('http://example.com');
 var proxyRequest = proxy.request(opts, function(exitNode) {
     console.log(exitNode);
 });
